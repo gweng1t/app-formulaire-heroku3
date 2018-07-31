@@ -26,7 +26,7 @@ $ rails server
 $ localhost:3000
 ```
 
-#### Si probleme avec rails server
+### Si probleme avec rails server
 ```
 $ rails server -p 4567
 ```
