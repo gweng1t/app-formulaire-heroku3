@@ -21,13 +21,13 @@
 
 		<%= form_tag url_for(action: 'create'), method: "post" do %>
 	      <%= label_tag 'Username' %>
-	      <%= text_field_tag 'username', nil, class: 'form-control col-sm-6' %> <br>
+	      <%= text_field_tag 'username', "ex : Nancy", class: 'form-control col-sm-6' %> <br>
 
 	      <%= label_tag 'Email' %>
-	      <%= text_field_tag 'email', nil, class: 'form-control col-sm-6' %> <br>
+	      <%= text_field_tag 'email', "ex : nancy@gmail.com", class: 'form-control col-sm-6' %> <br>
 
 	      <%= label_tag 'Bio' %>
-	      <%= text_area_tag 'bio', nil, class: 'form-control col-sm-6' %> <br>
+	      <%= text_area_tag 'bio', "ex : Je viens de Paris, je fait THP :D", class: 'form-control col-sm-6' %> <br>
 
 	      <%= submit_tag "Create User", :class => 'btn btn-primary btn-lg'%>
 	    <% end %>
