@@ -9,7 +9,28 @@
 	<h2>Et si on te donnait vie:</h2>
 
 	<br>
-	<form action="/" method="post">
+
+
+
+
+
+
+
+	<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Username' %>
+      <%= text_field_tag 'username' %> <br>
+
+      <%= label_tag 'Email' %>
+      <%= text_field_tag 'email' %> <br>
+
+      <%= label_tag 'Bio' %>
+      <%= text_area_tag 'bio' %> <br>
+
+      <%= submit_tag "Create User" %>
+    <% end %>
+
+	<!-- <form action="/" method="post">
 		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 		Username: 
 		<input type="text" name="username"> <br>
@@ -18,7 +39,7 @@
 		Bio: 
 		<textarea name="bio"></textarea> <br>
 		<input type="submit" name="Envoyer">
-	</form>
+	</form> -->
 
 
 </body>
