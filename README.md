@@ -10,7 +10,6 @@ ruby '2.5.1'
 ## Etapes:
 * Installation des gems (sans la production)
 * Lancement des migrations
-* 
 
 ```
 $ bundle install --without production
