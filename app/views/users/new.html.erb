@@ -1,36 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CREATION</title>
+	<title>FORMULAIRE 1</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
 </head>
 <body>
-	<h1>Creation d'un user</h1>
-	<h2>Et si on te donnait vie:</h2>
+	<h1>FORMULAIRE HTML</h1>
+	<h2>Creation d'un user </h2> <br>
 
-	<br>
-
-
-
-
-
-
-
-	<%= form_tag url_for(action: 'create'), method: "post" do %>
-
-      <%= label_tag 'Username' %>
-      <%= text_field_tag 'username' %> <br>
-
-      <%= label_tag 'Email' %>
-      <%= text_field_tag 'email' %> <br>
-
-      <%= label_tag 'Bio' %>
-      <%= text_area_tag 'bio' %> <br>
-
-      <%= submit_tag "Create User" %>
-    <% end %>
-
-	<!-- <form action="/" method="post">
+	<form method="post">
 		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 		Username: 
 		<input type="text" name="username"> <br>
@@ -39,8 +17,15 @@
 		Bio: 
 		<textarea name="bio"></textarea> <br>
 		<input type="submit" name="Envoyer">
-	</form> -->
+	</form>
 
+	<br><br>
+	<ul>
+		<li><a href="/">ACCUEIL</a></li>
+		<br>
+		<li><a href="/new2">Formulaire N°2</a></li>
+		<li><a href="/new3">Formulaire N°3</a></li>
+	</ul>
 
 </body>
 </html>
