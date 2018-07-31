@@ -5,30 +5,31 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
 </head>
 <body>
+	<ul class="nav nav-pills nav-fill">
+	  <li class="nav-item">  <a class="nav-link" href="/">Accueil</a>   </li>
+	  <li class="nav-item">  <a class="nav-link" href="/new">Formulaire 1</a>  </li>
+	  <li class="nav-item">  <a class="nav-link active" href="/new2">Formulaire 2</a> </li>
+	  <li class="nav-item">  <a class="nav-link" href="/new3">Formulaire 3</a> </li>
+	</ul>
+
+<br><br>
 	<h1>FORMULAIRE FORM_TAG</h1>
 	<h2>Creation d'un user </h2> <br>
 
 
 	<%= form_tag url_for(action: 'create'), method: "post" do %>
       <%= label_tag 'Username' %>
-      <%= text_field_tag 'username' %> <br>
+      <%= text_field_tag 'username', nil, class: 'form-control col-sm-6' %> <br>
 
       <%= label_tag 'Email' %>
-      <%= text_field_tag 'email' %> <br>
+      <%= text_field_tag 'email', nil, class: 'form-control col-sm-6' %> <br>
 
       <%= label_tag 'Bio' %>
-      <%= text_area_tag 'bio' %> <br>
+      <%= text_area_tag 'bio', nil, class: 'form-control col-sm-6' %> <br>
 
-      <%= submit_tag "Create User" %>
+      <%= submit_tag "Create User", :class => 'btn btn-primary btn-lg'%>
     <% end %>
 
-    <br><br>
-	<ul>
-		<li><a href="/">ACCUEIL</a></li>
-		<li><a href="/new">Formulaire N°1</a></li>
-		<br>
-		<li><a href="/new3">Formulaire N°3</a></li>
-	</ul>
 
 </body>
 </html>

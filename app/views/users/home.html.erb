@@ -5,14 +5,31 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
 </head>
 <body>
-	<h1>BIENVENUE SUR HOME</h1>
-	<h2>Je suis la page Home, à votre service: </h2>
-
-	<ul>
-		<li><a href="/new">Formulaire N°1</a></li>
-		<li><a href="/new2">Formulaire N°2</a></li>
-		<li><a href="/new3">Formulaire N°3</a></li>
+	<ul class="nav nav-pills nav-fill">
+	  <li class="nav-item">  <a class="nav-link active" href="/">Accueil</a>   </li>
+	  <li class="nav-item">  <a class="nav-link" href="/new">Formulaire 1</a>  </li>
+	  <li class="nav-item">  <a class="nav-link" href="/new2">Formulaire 2</a> </li>
+	  <li class="nav-item">  <a class="nav-link" href="/new3">Formulaire 3</a> </li>
 	</ul>
+
+			<br><br><br><br><br><br><br><br><br>
+
+	<center>
+		<h1>BIENVENUE SUR HOME</h1>
+		<h2>Je suis la page Home, à votre service: </h2>
+			<br><br>
+
+		<form action="/new" method="get">
+			<button type="submit" class="btn btn-primary btn-lg btn-block col-sm-10">Formulaire 1</button>
+		</form>
+		<form action="/new2" method="get">
+			<button type="submit" class="btn btn-secondary btn-lg btn-block col-sm-10">Formulaire 2</button>
+		</form>
+		<form action="/new3" method="get">
+			<button type="submit" class="btn btn-thirdy btn-lg btn-block col-sm-10">Formulaire 3</button>
+		</form>
+	</center>
+
 
 </body>
 </html>
