@@ -23,6 +23,7 @@ $ rails db:migrate
 $ rails server
 ```
 
+#### Dans la barre d'url du Navigateur web
 ```
 $ localhost:3000
 ```
@@ -31,6 +32,7 @@ $ localhost:3000
 ```
 $ rails server -p 4567
 ```
+#### Dans la barre d'url du Navigateur web
 ```
 $ localhost:4567
 ```
