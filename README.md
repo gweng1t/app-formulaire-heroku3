@@ -6,7 +6,7 @@
 $ git clone https://github.com/Gwekkeo/app-formulaire-heroku3.git
 ```
 ```
-$ cd appp-formulaire-heroku3
+$ cd app-formulaire-heroku3
 ```
 
 ## Etapes:
