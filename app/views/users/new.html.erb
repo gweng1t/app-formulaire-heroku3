@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CREATION</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+</head>
+<body>
+	<h1>Creation d'un user</h1>
+	<h2>Et si on te donnait vie:</h2>
+
+	<br>
+	<form action="/" method="post">
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		Username: 
+		<input type="text" name="username"> <br>
+		Email: 
+		<input type="text" name="email"> <br>
+		Bio: 
+		<textarea name="bio"></textarea> <br>
+		<input type="submit" name="Envoyer">
+	</form>
+
+
+</body>
+</html>
