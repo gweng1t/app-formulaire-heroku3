@@ -13,22 +13,25 @@
 	</ul>
 
 <br><br>
-	<h1>FORMULAIRE FORM_TAG</h1>
-	<h2>Creation d'un user </h2> <br>
+
+	<center>	
+		<h1>FORMULAIRE FORM_TAG</h1>
+		<h2>Creation d'un user </h2> <br>
 
 
-	<%= form_tag url_for(action: 'create'), method: "post" do %>
-      <%= label_tag 'Username' %>
-      <%= text_field_tag 'username', nil, class: 'form-control col-sm-6' %> <br>
+		<%= form_tag url_for(action: 'create'), method: "post" do %>
+	      <%= label_tag 'Username' %>
+	      <%= text_field_tag 'username', nil, class: 'form-control col-sm-6' %> <br>
 
-      <%= label_tag 'Email' %>
-      <%= text_field_tag 'email', nil, class: 'form-control col-sm-6' %> <br>
+	      <%= label_tag 'Email' %>
+	      <%= text_field_tag 'email', nil, class: 'form-control col-sm-6' %> <br>
 
-      <%= label_tag 'Bio' %>
-      <%= text_area_tag 'bio', nil, class: 'form-control col-sm-6' %> <br>
+	      <%= label_tag 'Bio' %>
+	      <%= text_area_tag 'bio', nil, class: 'form-control col-sm-6' %> <br>
 
-      <%= submit_tag "Create User", :class => 'btn btn-primary btn-lg'%>
-    <% end %>
+	      <%= submit_tag "Create User", :class => 'btn btn-primary btn-lg'%>
+	    <% end %>
+	</center>
 
 
 </body>

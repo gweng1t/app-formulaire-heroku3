@@ -13,15 +13,17 @@
 	</ul>
 
 <br><br>	
-	<h1>FORMULAIRE FORM_FOR</h1>
-	<h2>Creation d'un user </h2> <br>
+	<center>
+		<h1>FORMULAIRE FORM_FOR</h1>
+		<h2>Creation d'un user </h2> <br>
 
-	<%= form_for :user do |f|%>
-		Username : <%= f.text_field :username, class: 'form-control col-sm-10'%> <br>
-		Email : <%= f.text_field :email, class: 'form-control col-sm-10' %> <br>
-		Bio : <%= f.text_area :bio, size: "12", class: 'form-control col-sm-10' %> <br>
-		<%= f.submit %>
-	<% end %>
+		<%= form_for :user do |f|%>
+			Username : <%= f.text_field :username, class: 'form-control col-sm-10'%> <br>
+			Email : <%= f.text_field :email, class: 'form-control col-sm-10' %> <br>
+			Bio : <%= f.text_area :bio, size: "12", class: 'form-control col-sm-10' %> <br>
+			<%= f.submit %>
+		<% end %>
+	</center>
 
 
 </body>
